@@ -1,0 +1,17 @@
+.datedeadline::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+.datedeadline::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.datedeadline::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.datedeadline {
+  scrollbar-gutter: stable !important;
+  border-radius: 0.5em 0.5em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 5px 2px;
+}

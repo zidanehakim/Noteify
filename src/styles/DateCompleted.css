@@ -1,0 +1,47 @@
+.datecompleted {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "one" "two";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7em;
+}
+.datecompleted .gridOne {
+  grid-area: one;
+  overflow-y: auto;
+  scrollbar-color: rgb(65, 65, 65) rgb(36, 36, 36);
+  direction: rtl;
+}
+.datecompleted .gridOne .completedTask {
+  border: none;
+}
+.datecompleted .gridOne .completedList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  direction: ltr;
+}
+.datecompleted .gridTwo {
+  grid-area: two;
+  border-top: 2px solid #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 0 0 1em;
+  overflow-y: auto;
+}
+.datecompleted .circle {
+  display: flex;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: #b52d5f;
+  border-radius: 50%;
+}
+.datecompleted .circle h6 {
+  margin: auto;
+  font-size: 1.5em;
+}

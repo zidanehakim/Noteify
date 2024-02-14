@@ -1,0 +1,36 @@
+.dateform .gridOne {
+  grid-area: one;
+}
+.dateform .gridTwo {
+  grid-area: two;
+}
+.dateform .gridThree {
+  grid-area: three;
+}
+.dateform .form-control:focus {
+  box-shadow: 0 0 0.15em 1px #f2ae44;
+}
+@media only screen and (max-width: 600px) {
+  .dateform {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "one two" "three three";
+    grid-template-columns: auto auto;
+    grid-template-rows: 18em auto;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .dateform {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "one two" "three three";
+    grid-template-columns: auto auto;
+    grid-template-rows: 18em auto;
+    justify-content: center;
+    justify-items: center;
+  }
+}

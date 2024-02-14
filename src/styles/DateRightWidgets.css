@@ -1,0 +1,17 @@
+.daterightwidgets {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "one two";
+  grid-template-columns: minmax(4em, 6em) 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 1em 0 0 1em;
+}
+.daterightwidgets .gridOne {
+  grid-area: one;
+  border-radius: 1em 0 0 1em;
+}
+.daterightwidgets .gridTwo {
+  grid-area: two;
+  background-color: #fff;
+}

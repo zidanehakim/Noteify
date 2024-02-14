@@ -1,0 +1,24 @@
+.dateNote .gridOne {
+  grid-area: one;
+}
+.dateNote .gridTwo {
+  grid-area: two;
+}
+@media only screen and (max-width: 600px) {
+  .dateNote {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "one two";
+    grid-template-columns: 0.8fr 3em;
+    grid-template-rows: 3em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .dateNote {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "one two";
+    grid-template-columns: 0.8fr 3em;
+    grid-template-rows: 3em;
+  }
+}

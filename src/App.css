@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400..800&display=swap");
+
+* {
+  font-family: "Sora";
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-color: #f1f1f1;
+  width: 100vw;
+  height: fit-content !important;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+}
+
+.error {
+  border-color: #dc3545;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px #dc3545;
+}
+
+button {
+  transition: 0.12s ease-in !important;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.fontMedium {
+  font-size: 0.9em;
+}
+
+.fontNormal {
+  font-size: 1em;
+}
+
+.fontTitle {
+  font-size: 1.1em;
+}
+
+.fontSemi {
+  font-size: 0.8em;
+}
+
+.fontMini {
+  font-size: 0.7em;
+}
+
+.fontSMini {
+  font-size: 0.6em;
+}
+
+.bg-red {
+  background-color: #b52d5f !important;
+}
+
+.bg-orange {
+  background-color: #f2ae44 !important;
+}
+
+.text-red {
+  color: #b52d5f !important;
+}
+
+.text-orange {
+  color: #f2ae44 !important;
+}
+
+.red {
+  background-color: #f03d34 !important;
+}
+
+.green {
+  background-color: #1d9136 !important;
+}
+
+.yellow {
+  background-color: #fcc815 !important;
+}
+
+.blue {
+  background-color: #69a9e6 !important;
+}
+
+.brown {
+  background-color: #c4a84b !important;
+}
+
+.purple {
+  background-color: #7055af !important;
+}
+
+.pink {
+  background-color: #fe5b7c !important;
+}
+
+.aqua {
+  background-color: #1fc1c3 !important;
+}
+
+/* Custom bootstrap components */
+.tooltip-inner {
+  max-width: fit-content !important;
+}
+
+.navbar-toggler {
+  color: #f2ae44 !important;
+}
+
+.navbar-toggler span {
+  filter: invert(1);
+}

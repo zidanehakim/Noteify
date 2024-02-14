@@ -1,0 +1,203 @@
+.landing {
+  height: fit-content !important;
+  width: 100vw;
+  font-family: "Sora" !important;
+}
+
+.landing .bg {
+  background-image: url("../images/landingbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.landing .firstSection {
+  height: 250vh;
+  width: 100vw;
+  position: relative;
+  z-index: 5;
+}
+
+.landing .firstSection button {
+  background-color: transparent;
+  border: none;
+  height: 4em;
+  box-shadow: 7px 7px 0 1px #f2ae44;
+}
+
+.landing .secondSection {
+  position: relative;
+  z-index: 1;
+  height: 800vh;
+  width: 100vw;
+}
+
+.landing .secondSection .cards {
+  width: 4em;
+  height: 4em;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 5px 2px;
+}
+
+.landing .secondSection .glow {
+  box-shadow: 0px 0px 2px 2px rgba(46, 199, 255, 0.9);
+}
+
+.landing .secondSection .textPopup h1 {
+  position: relative;
+  font-size: 3.5em;
+  font-family: "Sora";
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.landing .secondSection {
+  width: 100vw;
+  background-color: rgb(29, 28, 28);
+}
+
+@media only screen and (max-width: 600px) {
+  .landing .thirdSection {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-areas:
+      "one"
+      "two"
+      "four"
+      "three"
+      "five"
+      "six";
+    grid-template-columns: 1fr;
+    grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .landing .thirdSection .gridOne {
+    height: 100lvh;
+    grid-area: one;
+    background-image: url("../images/weather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridTwo {
+    height: 100lvh;
+    grid-area: two;
+    background-color: #6490c4;
+    background-image: url("../images/shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridThree {
+    height: 100lvh;
+    grid-area: three;
+    background-color: #7764c4;
+    background-image: url("../images/shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridFour {
+    height: 100lvh;
+    grid-area: four;
+    background-image: url("../images/clock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridFive {
+    height: 100lvh;
+    grid-area: five;
+    background-image: url("../images/location.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridSix {
+    height: 100lvh;
+    grid-area: six;
+    background-color: #c46492;
+    background-image: url("../images/shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .landing .thirdSection {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr 1fr 1fr;
+  }
+
+  .landing .thirdSection .gridOne {
+    height: 100lvh;
+    grid-area: one;
+    background-image: url("../images/weather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridTwo {
+    height: 100lvh;
+    grid-area: two;
+    background-color: #6490c4;
+    background-image: url("../images/shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridThree {
+    height: 100lvh;
+    grid-area: three;
+    background-color: #7764c4;
+    background-image: url("../images/shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridFour {
+    height: 100lvh;
+    grid-area: four;
+    background-image: url("../images/clock.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridFive {
+    height: 100lvh;
+    grid-area: five;
+    background-image: url("../images/location.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .landing .thirdSection .gridSix {
+    height: 100lvh;
+    grid-area: six;
+    background-color: #c46492;
+    background-image: url("../images/shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

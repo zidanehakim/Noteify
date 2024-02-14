@@ -1,0 +1,100 @@
+.datemaker .gridOne {
+  grid-area: one;
+  border: none;
+}
+.datemaker button {
+  font-size: 0.85em;
+}
+.datemaker .gridOne .nav-link {
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 0;
+}
+.datemaker .gridOne .nav-link.active {
+  background-color: #32373c !important;
+  border: none !important;
+}
+.datemaker .tab-content {
+  grid-area: two;
+  overflow-y: auto;
+  scrollbar-gutter: stable !important;
+}
+.datemaker .gridThree {
+  grid-area: three;
+}
+.datemaker .tab-content #fill-tab-example-tabpane-tasks {
+  height: 100%;
+  width: 100%;
+}
+
+.datemaker .tab-content #fill-tab-example-tabpane-tasks .tabDiv .gridm0 {
+  grid-area: m0;
+}
+.datemaker .tab-content #fill-tab-example-tabpane-tasks .tabDiv .gridm1 {
+  grid-area: m1;
+}
+.datemaker .tab-content #fill-tab-example-tabpane-tasks .tabDiv .gridm2 {
+  grid-area: m2;
+}
+@media only screen and (max-width: 600px) {
+  .datemaker {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "one" "three" "two";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    scrollbar-color: rgb(65, 65, 65) rgb(36, 36, 36);
+  }
+  .datemaker .tab-content #fill-tab-example-tabpane-tasks .tabDiv {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "m2 m0";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .datemaker {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "one" "three" "two";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    scrollbar-color: rgb(65, 65, 65) rgb(36, 36, 36);
+  }
+  .datemaker .tab-content #fill-tab-example-tabpane-tasks .tabDiv {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "m2 m0";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .datemaker {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "one" "three" "two";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    scrollbar-color: rgb(65, 65, 65) rgb(36, 36, 36);
+  }
+  .datemaker .tab-content #fill-tab-example-tabpane-tasks .tabDiv {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "m2 m1 m0";
+    grid-template-columns: 0.8fr 0.8fr 0.5fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 2em;
+    box-sizing: border-box;
+  }
+}
