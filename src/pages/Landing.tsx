@@ -152,7 +152,7 @@ export const Landing = () => {
   const xin1 = useTransform(
     scrollFirstProgress,
     [0, 0.6, 1],
-    ["0%", "-50%", "-230%"]
+    ["0%", "-50%", "-300%"]
   );
   const reverseOpacity1 = useTransform(scrollFirstProgress, [0.1, 1], [0, 2]);
 
