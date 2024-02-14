@@ -42,7 +42,10 @@ export const ResetPassword = () => {
       setSubmit(true);
 
       if (response.ok) setTimeout(() => setRedirect(true), 2000);
-      else setError(json.error);
+      else {
+        setSubmitting(false);
+        setError(json.error);
+      }
     };
 
     changePassword();
@@ -56,6 +59,7 @@ export const ResetPassword = () => {
     errors,
     touched,
     isSubmitting,
+    setSubmitting,
   } = useFormik({
     initialValues: { email: "", password: "", cpassword: "" },
     validationSchema: resetPasswordSchema,
