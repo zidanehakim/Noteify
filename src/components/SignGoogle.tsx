@@ -7,7 +7,7 @@ type SignGoogleProps = {
   rememberme: boolean;
 };
 
-const base = "https://easy-teal-alligator-hat.cyclic.app";
+const base = "https://noteify-server.onrender.com";
 
 export const SignGoogle = ({ rememberme }: SignGoogleProps) => {
   const auth = useAuthContext();
