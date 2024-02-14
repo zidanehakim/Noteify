@@ -9,7 +9,7 @@ type EmailAuthProps = {
   verify: UserType;
 };
 
-const base = "https://easy-teal-alligator-hat.cyclic.app";
+const base = "https://noteify-server.onrender.com";
 
 export const EmailAuth = ({ verify }: EmailAuthProps) => {
   const auth = useAuthContext();

@@ -4,10 +4,12 @@ import { ContrastOutline } from "react-ionicons";
 import { NavbarsAuth } from "../components/NavbarsAuth";
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-const base = "https://easy-teal-alligator-hat.cyclic.app";
+const base = "https://noteify-server.onrender.com";
 
 export const ForgotPassword = () => {
+  useDocumentTitle("Forgot Password - Noteify");
   const isPc = useMediaQuery({ query: "(min-width: 600px)" });
 
   const [email, setEmail] = useState("");

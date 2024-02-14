@@ -31,7 +31,7 @@ type AuthContextType = {
 
 export const AuthContext = createContext({} as AuthContextType);
 
-const base = "https://easy-teal-alligator-hat.cyclic.app";
+const base = "https://noteify-server.onrender.com";
 
 export const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
   const reducer = (state: PayloadType, action: ActionType) => {

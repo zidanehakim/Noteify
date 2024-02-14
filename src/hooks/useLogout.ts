@@ -1,6 +1,6 @@
 import { useAuthContext } from "./useAuthContext";
 
-const base = "https://easy-teal-alligator-hat.cyclic.app";
+const base = "https://noteify-server.onrender.com";
 
 export const useLogout = () => {
   const auth = useAuthContext();

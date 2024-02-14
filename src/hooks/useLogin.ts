@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 import { UserType } from "../contexts/AuthContext";
 
-const base = "https://easy-teal-alligator-hat.cyclic.app";
+const base = "https://noteify-server.onrender.com";
 
 export const useLogin = () => {
   const auth = useAuthContext();
