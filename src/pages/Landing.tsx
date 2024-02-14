@@ -152,7 +152,7 @@ export const Landing = () => {
   const xin1 = useTransform(
     scrollFirstProgress,
     [0, 0.6, 1],
-    ["0%", "-50%", "-300%"]
+    ["0%", "-50%", "-350%"]
   );
   const reverseOpacity1 = useTransform(scrollFirstProgress, [0.1, 1], [0, 2]);
 
@@ -245,7 +245,7 @@ export const Landing = () => {
   const xin4 = useTransform(
     scrollFourthProgress,
     [0, 0.4, 1],
-    ["-230%", "-50%", "0%"]
+    ["-350%", "-50%", "0%"]
   );
 
   const reverseOpacity4 = useTransform(scrollFourthProgress, [0, 0.3], [2, 0]);
