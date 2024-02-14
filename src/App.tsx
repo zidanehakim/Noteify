@@ -16,28 +16,30 @@ import { Landing } from "./pages/Landing";
 function App() {
   const auth = useAuthContext();
 
-  return !auth.isLoading ? (
-    <>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route
-          path="/login"
-          element={!auth.user ? <Login /> : <Navigate to="/planner" />}
-        />
-        <Route
-          path="/signup"
-          element={!auth.user ? <Signup /> : <Navigate to="/planner" />}
-        />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-        <Route
-          path="/planner"
-          element={auth.user ? <MemoizedPlanner /> : <Navigate to="/login" />}
-        />
-      </Routes>
-    </>
-  ) : (
-    <Loading />
+  return (
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      {!auth.isLoading ? (
+        <>
+          <Route
+            path="/login"
+            element={!auth.user ? <Login /> : <Navigate to="/planner" />}
+          />
+          <Route
+            path="/signup"
+            element={!auth.user ? <Signup /> : <Navigate to="/planner" />}
+          />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route
+            path="/planner"
+            element={auth.user ? <MemoizedPlanner /> : <Navigate to="/login" />}
+          />
+        </>
+      ) : (
+        <Loading />
+      )}
+    </Routes>
   );
 }
 
