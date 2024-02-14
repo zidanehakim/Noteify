@@ -207,7 +207,7 @@ export const Planner = () => {
       </DragDropContext>
       <MemoizedDateCompleted className="bg-dark gridThree"></MemoizedDateCompleted>
       <DateLeftWidgets className="dateleftwidgets border-top border-top-1 border-top-white gridFour bg-white"></DateLeftWidgets>
-      <MemoizedDateDeadline className="datedeadline border border-1 border-white bg-white gridFive d-flex flex-row overflow-x-scroll align-items-center px-4 pb-4 mb-1"></MemoizedDateDeadline>
+      <MemoizedDateDeadline className="datedeadline border border-1 border-white bg-white gridFive d-flex flex-row overflow-x-scroll overflow-y-hidden align-items-center px-4 pb-4 mb-1"></MemoizedDateDeadline>
       {isFirstBreak && (
         <DateRightWidgets className="daterightwidgets border border-1 border-white gridSix"></DateRightWidgets>
       )}
