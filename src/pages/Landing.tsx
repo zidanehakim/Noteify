@@ -309,7 +309,8 @@ export const Landing = () => {
   const opacitywhole2 = useTransform(scrollSecondProgress, [0.85, 1], [1, 0]);
 
   // TEXT MASK
-  const ref = useRef<HTMLHeadingElement | null>(null);
+  const ref1 = useRef<HTMLHeadingElement | null>(null);
+  const ref2 = useRef<HTMLHeadingElement | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -454,7 +455,7 @@ export const Landing = () => {
                 ></motion.path>
               </motion.svg>
               <motion.h1
-                ref={ref}
+                ref={ref1}
                 variants={textVariant}
                 initial="hidden"
                 animate="visible"
@@ -839,7 +840,7 @@ export const Landing = () => {
                 ></motion.path>
               </motion.svg>
               <motion.h1
-                ref={ref}
+                ref={ref2}
                 className={`d-inline-block fw-bold ${
                   isPc ? "text-orange" : "text-white"
                 }`}
