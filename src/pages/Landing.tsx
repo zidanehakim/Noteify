@@ -315,8 +315,16 @@ export const Landing = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (ref.current) {
-        const rect = ref.current.getBoundingClientRect();
+      if (ref1.current) {
+        const rect = ref1.current.getBoundingClientRect();
+        setMousePosition({
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top,
+        });
+      }
+
+      if (ref2.current) {
+        const rect = ref2.current.getBoundingClientRect();
         setMousePosition({
           x: e.clientX - rect.left,
           y: e.clientY - rect.top,
