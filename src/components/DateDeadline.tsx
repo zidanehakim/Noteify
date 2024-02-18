@@ -30,7 +30,7 @@ export const DateDeadline = ({ className }: DateDeadlineProps) => {
 
   const deadline = (a: calendarType) => {
     const stringList: string[] = [];
-    const dateThat = new Date(a.year, a.month, a.date);
+    const dateThat = new Date(a.year, a.month, a.date + 1);
 
     if (
       Math.floor(new DateDiff(dateThat, dateNow).minutes()) < 60 &&
@@ -101,8 +101,10 @@ export const DateDeadline = ({ className }: DateDeadlineProps) => {
       {objs.bigData.calendarTasks.length > 0 ? (
         objs.bigData.calendarTasks.map(
           (a, index) =>
-            new DateDiff(new Date(a.year, a.month, a.date), dateNow).minutes() >
-              0 &&
+            new DateDiff(
+              new Date(a.year, a.month, a.date + 1),
+              dateNow
+            ).minutes() > 0 &&
             a.tasks.map((b) => (
               <TemplateNote
                 key={b._id}
@@ -123,7 +125,7 @@ export const DateDeadline = ({ className }: DateDeadlineProps) => {
                   red: red,
                   yellow,
                   days: new DateDiff(
-                    new Date(a.year, a.month, a.date),
+                    new Date(a.year, a.month, a.date + 1),
                     dateNow
                   ).days(),
                 }}
