@@ -47,7 +47,7 @@ export const DateCompleted = ({ className }: DateCompletedProps) => {
     const interval = setInterval(() => {
       objs.bigData.calendarTasks.map((a, index) => {
         const timeData = new DateDiff(
-          new Date(a.year, a.month, a.date + 1),
+          new Date(a.year, a.month, a.date),
           new Date()
         );
         if (Math.floor(timeData.minutes()) < 0) {
