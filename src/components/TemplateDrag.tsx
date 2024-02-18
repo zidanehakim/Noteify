@@ -47,7 +47,7 @@ export const TemplateDrag = ({
       new Date(
         objs.bigData.columns.calendar[parseInt(id.substring(1))].year,
         objs.bigData.columns.calendar[parseInt(id.substring(1))].month,
-        objs.bigData.columns.calendar[parseInt(id.substring(1))].date
+        objs.bigData.columns.calendar[parseInt(id.substring(1))].date + 1
       ),
       new Date()
     ).minutes() < 0;
