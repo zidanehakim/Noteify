@@ -34,7 +34,7 @@ type DndContextType = {
 
 export const DndContext = createContext({} as DndContextType);
 
-const base = "https://noteify-server.onrender.com";
+const base = import.meta.env.VITE_BASE_SERVER;
 
 export const DndContextProvider = ({ children }: DndContextProviderProps) => {
   const auth = useAuthContext();

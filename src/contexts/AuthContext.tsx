@@ -31,7 +31,7 @@ type AuthContextType = {
 
 export const AuthContext = createContext({} as AuthContextType);
 
-const base = "https://noteify-server.onrender.com";
+const base = import.meta.env.VITE_BASE_SERVER;
 
 export const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
   const reducer = (state: PayloadType, action: ActionType) => {

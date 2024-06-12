@@ -1,6 +1,6 @@
 import { useAuthContext } from "./useAuthContext";
 
-const base = "https://noteify-server.onrender.com";
+const base = import.meta.env.VITE_BASE_SERVER;
 
 export const useLogout = () => {
   const auth = useAuthContext();

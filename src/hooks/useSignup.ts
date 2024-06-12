@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 import { UserType } from "../contexts/AuthContext";
 
-const base = "https://noteify-server.onrender.com";
+const base = import.meta.env.VITE_BASE_SERVER;
 
 export const useSignup = () => {
   const auth = useAuthContext();

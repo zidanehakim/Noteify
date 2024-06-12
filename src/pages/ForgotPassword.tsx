@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-const base = "https://noteify-server-git-main-zidanehakims-projects.vercel.app/";
+const base = import.meta.env.VITE_BASE_SERVER;
 
 export const ForgotPassword = () => {
   useDocumentTitle("Forgot Password - Noteify");
