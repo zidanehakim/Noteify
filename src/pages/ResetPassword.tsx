@@ -10,7 +10,7 @@ import { resetPasswordSchema } from "../schemas/YupSchemas";
 import { useMediaQuery } from "react-responsive";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
-const base = "https://noteify-server.onrender.com";
+const base = "https://noteify-server.vercel.app";
 
 export const ResetPassword = () => {
   useDocumentTitle("Reset Password - Noteify");
